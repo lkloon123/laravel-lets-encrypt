@@ -1,0 +1,34 @@
+{
+  "name": "neoson/laravel-letsencrypt-routing",
+  "description": "letsencrypt routing for Laravel",
+  "type": "library",
+  "keywords": ["letsencrypt","ssl","laravel"],
+  "authors": [
+    {
+      "name": "NeoSon",
+      "email": "lkloon123@hotmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.0",
+    "laravel/framework": "5.*"
+  },
+  "require-dev": {
+    "illuminate/console": "~5",
+    "illuminate/support": "~5"
+  },
+  "autoload": {
+    "psr-4": {
+      "NeoSon\\LetsEncrypt\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NeoSon\\LetsEncrypt\\LetsEncryptServiceProvider"
+      ]
+    }
+  }
+}
